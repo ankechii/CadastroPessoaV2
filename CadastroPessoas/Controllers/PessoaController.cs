@@ -47,22 +47,22 @@ namespace CadastroPessoas.Controllers
                 dados.Validar();
 
                 Pessoa model = new Pessoa();
-                model.Nome = dados.Nome;
+                model.Nome = dados.Nome.Hash();
                 model.DataNascimento = dados.DataNascimento.Value;
-                model.Sexo = dados.Sexo;
-                model.EstadoCivil = dados.EstadoCivil;
-                model.CPF = dados.CPF;
-                model.CEP = dados.CEP;
-                model.Endereco = dados.Endereco;
-                model.Numero = dados.Numero;
-                model.Complemento = dados.Complemento;
-                model.Bairro = dados.Bairro;
-                model.Cidade = dados.Cidade;
-                model.UF = dados.UF;
-                model.Email = dados.Email;
-                model.Senha = dados.Senha;
-                model.Senhac = dados.Senhac;
-                model.Celular = dados.Celular;
+                model.Sexo = dados.Sexo.Hash();
+                model.EstadoCivil = dados.EstadoCivil.Hash();
+                model.CPF = dados.CPF.Hash();
+                model.CEP = dados.CEP.Hash();
+                model.Endereco = dados.Endereco.Hash();
+                model.Numero = dados.Numero.Hash();
+                model.Complemento = dados.Complemento.Hash();
+                model.Bairro = dados.Bairro.Hash();
+                model.Cidade = dados.Cidade.Hash();
+                model.UF = dados.UF.Hash();
+                model.Email = dados.Email.Hash();
+                model.Senha = dados.Senha.Hash();
+                model.Senhac = dados.Senhac.Hash();
+                model.Celular = dados.Celular.Hash();
 
                 db.Pessoa.Add(model);
                 db.SaveChanges();
