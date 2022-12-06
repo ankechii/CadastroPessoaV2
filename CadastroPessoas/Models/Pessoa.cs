@@ -15,26 +15,26 @@ namespace CadastroPessoas.Models
         public int Id { get; set; }
 
         [Required]
-        [StringLength(200)]
+        [StringLength(100)]
         public string Nome { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime DataNascimento { get; set; }
 
         [Required]
-        [StringLength(1)]
+        [StringLength(100)]
         public string Sexo { get; set; }
 
         [Required]
-        [StringLength(20)]
+        [StringLength(100)]
         public string EstadoCivil { get; set; }
 
         [Required]
-        [StringLength(11)]
+        [StringLength(100)]
         public string CPF { get; set; }
 
         [Required]
-        [StringLength(8)]
+        [StringLength(100)]
         public string CEP { get; set; }
 
         [Required]
@@ -42,22 +42,22 @@ namespace CadastroPessoas.Models
         public string Endereco { get; set; }
 
         [Required]
-        [StringLength(10)]
+        [StringLength(100)]
         public string Numero { get; set; }
 
-        [StringLength(30)]
+        [StringLength(100)]
         public string Complemento { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(100)]
         public string Bairro { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(100)]
         public string Cidade { get; set; }
 
         [Required]
-        [StringLength(2)]
+        [StringLength(100)]
         public string UF { get; set; }
 
         [Required]
@@ -72,7 +72,7 @@ namespace CadastroPessoas.Models
         public string Senhac { get; set; }
 
         [Required]
-        [StringLength(11)]
+        [StringLength(100)]
         public string Celular { get; set; }
 
     }
